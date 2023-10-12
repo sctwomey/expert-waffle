@@ -7,8 +7,8 @@ When the user clicks on an existing note in the list that is in the left-hand co
 
 Images of the application's appearance and functionality are here.
 
-<img src="" alt="Note Taker Example1 File Image" title="Note Taker Example1 File Screenshot">
-<img src="" alt="Note Taker Example2 File Image" title="Note Taker Example2 File Screenshot">
+<img src="images/11-express-homework-demo-01.png" alt="Note Taker Example1 File Image" title="Note Taker Example1 File Screenshot">
+<img src="images/11-express-homework-demo-02.png" alt="Note Taker Example2 File Image" title="Note Taker Example2 File Screenshot">
 
 ## Installation
 
