@@ -12,11 +12,11 @@ Images of the application's appearance and functionality are here.
 
 ## Installation
 
-The Express.js Note Taker Application is a browser application.
+The Express Note Taker Application is a browser application.
 
 ## Usage
 
-The information for the Express.js Note Taker application can be found in the respository.
+The information for the Express Note Taker application can be found in the respository.
 
 ## Credits
 
