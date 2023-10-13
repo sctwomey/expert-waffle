@@ -15,10 +15,10 @@ router.get("/notes", (req, res) => {
 
 // This is the GET route for returning a note by its 'title'.
 router.get("/notes/:title", (req, res) => {
-    const requestedId = req.params.title;
+    const titleRequest = req.params.title;
 
     for (let i = 0; i < db.length; i++) {
-        if (requestedId === db[i].title) {
+        if (titleRequest === db[i].id) {
             res.json(db[i]);
         };
     };
