@@ -48,7 +48,7 @@ router.post("/notes", (req, res) => {
 router.delete('/notes/:id', (req, res) => {
     db = db.filter((x) => x.id != req.params.id);
     res.json(db);
-    fs.writeFileSync('./db/db.json', JSON.stringify(db, null, 'utf8'));
+    fs.writeFileSync('./db/db.json', JSON.stringify(db, null, 4));
 });
 
 // This function is for reading the data from a file and adding what content is provided.
