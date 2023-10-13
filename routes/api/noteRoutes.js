@@ -37,7 +37,7 @@ router.post("/notes", (req, res) => {
             id: uuid(),
         };
 
-        readAndAppend(newNote, "./db/db.json");
+        readAppend(newNote, "./db/db.json");
         return res.send(`Successfully added the new note!`);
     } else {
         return res.send("There was an error while trying to add the new note.");
@@ -52,19 +52,19 @@ router.delete('/notes/:id', (req, res) => {
 });
 
 // This function is for reading the data from a file and adding what content is provided.
-const readAndAppend = (content, file) => {
+const readAppend = (content, file) => {
     fs.readFile(file, "utf8", (err, data) => {
         if (err) {
             console.log(err);
         } else {
             const parsedData = JSON.parse(data);
             parsedData.push(content);
-            writeToFile(file, parsedData);
+            fileWrite(file, parsedData);
         }
     });
 };
 // This function is for writing the data to the JSON file.
-const writeToFile = (destination, content) =>
+const fileWrite = (destination, content) =>
     fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
         err ? console.error(err) : console.info(`Writting to ${destination} has been successful!`)
     );
