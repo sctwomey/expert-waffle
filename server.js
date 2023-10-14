@@ -1,7 +1,7 @@
 // These are the modules that are 'Required' for import and use.
 const express = require("express");
 const apiRoutes = require('./routes/api');
-const htmlRoutes = require('./routes');
+const indexRoutes = require('./routes');
 
 const app = express();
 
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.use(htmlRoutes);
+app.use(indexRoutes);
 app.use(apiRoutes);
 
 app.listen(PORT, () =>
