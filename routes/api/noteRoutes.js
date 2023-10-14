@@ -9,7 +9,7 @@ let db = require("../../db/db.json");
 
 // This is the GET Route for the retrieving of all notes in the json file.
 router.get("/notes", (req, res) => {
-    console.info(`${req.method} request received for notes`);
+    console.info(`This ${req.method} request was received for the notes.`);
     fileRead("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
