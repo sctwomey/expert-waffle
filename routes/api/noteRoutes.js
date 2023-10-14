@@ -31,13 +31,13 @@ router.post("/notes", (req, res) => {
     const { title, text } = req.body;
 
     if (req.body) {
-        const newNote = {
+        const note = {
             title,
             text,
             id: uuid(),
         };
 
-        readAppend(newNote, "./db/db.json");
+        readAppend(note, "./db/db.json");
         return res.send(`Successfully added the new note!`);
     } else {
         return res.send("There was an error while trying to add the new note.");
