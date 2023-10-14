@@ -1,9 +1,9 @@
 // These are the global variables.
 const router = require('express').Router();
 const fs = require('fs');
-const util = require("util");
+const ut = require("util");
 const uuid = require("../../helpers/uuid");
-const fileRead = util.promisify(fs.readFile);
+const fileRead = ut.promisify(fs.readFile);
 let db = require("../../db/db.json");
 
 
