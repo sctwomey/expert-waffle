@@ -12,7 +12,8 @@ Images of the application's appearance and functionality are here.
 
 ## Installation
 
-The Express Note Taker Application is a browser application.
+The Express Note Taker Application is a browser application that can be found at the following url: 
+https://secure-beach-92337-cdafda2f258c.herokuapp.com/
 
 ## Usage
 
