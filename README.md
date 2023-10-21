@@ -1,4 +1,4 @@
-# OOP Challenge: SVG Logo Maker 
+# Express Challenge: Note Taker Application 
 
 ## Description
 This challenge requires the development of a note-taking application from starter code. When the user opens the Note Taker application, the user is presented with a landing page that has a link to the notes page itself. When the user clicks on the link to the notes page, a page is presented that has existing notes listed in the left-hand column. There will also be empty fields where the user can enter a new note title and the text for the new note in the right-hand column. When the user enters a new note title and the note's text, a 'Save' icon appears in the navigation bar at the top of the page. When the user clicks on the 'Save' icon, the new note that was entered by the user is saved and appears in the left-hand column with the existing notes.
